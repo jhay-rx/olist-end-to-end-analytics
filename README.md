@@ -41,21 +41,39 @@
   <img src="docs\OlistProjectArchitecture.png" width="500" alt="Olist project architecture">
 </p>
 
-<!-- ![Project Architecture](docs\OlistProjectArchitecture.png) -->
+### Olist Raw Datasets
+This is the source of the data that contains orders, products, sellers, customers, payments, reviews and geolocations.
+### Python/Pandas
+Python specifically Pandas library was used to clean and transform the raw datasets and prepare derived fields for analysis.
+### MySQL Dimensional Model
+The prepared data was stored in fact and dimension tables for analytical queries.
+### SQL Views and Aggregations
+Created analysis-ready views and aggregated data while accounting for different table grains.
+### Power BI
+Built DAX measures and interactive visualizations for the final analysis.
+### Business Insights
+Used the dashboard to evaluate shipping efficiency and payment method performance
 
 ## 5. Data Modeling
+<p align="center">
+  <img src="docs/DataModel.png" width="1000" alt="Olist Data Model">
+</p>
 
-[Data Model Diagram]
 
-Short explanation of the fact/dimension structure.
+The project uses a dimensional data model using a galaxy schema with some snowflaked dimensions. It is consisting of transactional fact tables and descriptive dimension tables. *fact_sales, fact_orders, fact_payments,* and *fact_reviews* store transactional data, while dimensions such as *dim_product, dim_customer, dim_seller, dim_date,* and *dim_geo* provide descriptive attributes for analysis. Primary and foreign key relationships connect the tables and allow the data to be analyzed across orders, products, sellers, customers, payments, and dates.
+
+The tables maintain different grains: *fact_sales* is at the order-item level, *fact_orders* is at the order level, and *fact_payments* and *fact_reviews* contain multiple records that can be associated with an order.
 
 ## 6. Business Analysis
 
 ### Shipping Efficiency
-Short explanation + dashboard screenshot
+This dashboard analyzes the efficiency and reliability of order deliveries. It provides an overview of delivery performance through key metrics such as total orders, average delivery time, and delivery status. Seller-level and time-based analysis allows delivery performance to be compared across sellers and monitored over time.
 
+![Shipping Performance Report](docs/Shipping%20Performance%20Report.png)
+This dashboard also includes seller performance rankings, delivery status distribution and monthly delivery
 ### Payment Method Performance
 Short explanation + dashboard screenshot
+![Payment Method Performance Report](docs/Payment%20Method%20Performance%20Report.png)
 
 ## 7. Key Insights
 
