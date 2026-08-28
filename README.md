@@ -72,12 +72,16 @@ This dashboard analyzes the efficiency and reliability of order deliveries. It p
 ![Shipping Performance Report](docs/Shipping%20Performance%20Report.png)
 This dashboard also includes seller performance rankings, delivery status distribution and monthly delivery
 ### Payment Method Performance
-Short explanation + dashboard screenshot
+This dashboards analyzes the performance of different payment methods and customer payment behavior using transaction volume, payment value, customer spendings and installment information
+
 ![Payment Method Performance Report](docs/Payment%20Method%20Performance%20Report.png)
 
 ## 7. Key Insights
 
-Bullet points of findings.
+### Shipping Efficiency
++ Seller df683df... had the slowest average delivery time at approximately 190 days, while Seller 139157d... had the fastest at approximately 1.2 days. This represents a substantial difference in delivery performance across sellers, with the slowest seller taking more than six months on average.
++
+### Payment Method Performance
 
 ## 8. Challenges & Data Limitations
 
