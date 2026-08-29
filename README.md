@@ -1,4 +1,4 @@
-# Olist E-Commerce end-to-end Analytics
+# Olist E-Commerce end-to-end Analytics || Status: Documentation In-progress
 
 ## 1. Project Overview
    #### Objective
